@@ -195,7 +195,7 @@ fun ARScreenView(navController: NavController, model: String, context: Context) 
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
                 Button(
-                    onClick = { selectedType = "A" }, // Change model to "A"
+                    onClick = { selectedModel = "A" }, // Change model to "A"
                     modifier = Modifier.padding(8.dp),
                     shape = RoundedCornerShape(12.dp)
                 ) {
@@ -203,17 +203,17 @@ fun ARScreenView(navController: NavController, model: String, context: Context) 
                 }
 
                 Button(
-                    onClick = { selectedType = "B" }, // Change model to "B"
+                    onClick = { selectedModel = "B" }, // Change model to "B"
                     modifier = Modifier.padding(8.dp),
                     shape = RoundedCornerShape(12.dp)
                 ) {
                     Text("Model B")
                 }
-                Button(
-                    onClick = { selectedType = "IMG" },
-                    modifier = Modifier.padding(8.dp),
-                    shape = RoundedCornerShape(12.dp)
-                ) { Text("Model Img") }
+//                Button(
+//                    onClick = { selectedModel = "IMG" },
+//                    modifier = Modifier.padding(8.dp),
+//                    shape = RoundedCornerShape(12.dp)
+//                ) { Text("Model Img") }
 
                 // **Save Button for Creator Mode**
                 if (model == "C") {
